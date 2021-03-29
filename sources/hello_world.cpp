@@ -1,6 +1,6 @@
 #include <iostream>
 
-//удален
+//изменил
 
 int main()
 {
