@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Sudar-Kudr/lab04.svg?branch=main)](https://travis-ci.com/Sudar-Kudr/lab04)
+[![Build Status](https://travis-ci.com/Sudar-Kudr/lab04.svg?branch=main)](https://travis-ci.com/Sudar-Kudr/lab04)
 ## Laboratory work III
 
 
