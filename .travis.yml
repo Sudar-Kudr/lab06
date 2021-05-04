@@ -1,21 +1,30 @@
 language: cpp
 
 compiler:
-  - gcc
-  - clang
-
-os:
- - linux
+- gcc
+- clang
 
 addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-      - llvm-toolchain-precise-3.6
-    packages:
-      - g++-7
-      - clang-3.6
+apt:
+ sources:
+  - ubuntu-toolchain-r-test
+  - llvm-toolchain-precise-3.7
+ packages:
+  - cmake
+  - cmake-data
+  - clang-3.7
+  - g++-7
 
 script:
-- cmake CMakeLists.txt
-- cmake --build .
+- cd hello_world_application
+- cmake -H. -B_build
+- cmake --build _build
+- cmake --build _build --target hello_world
+- ./_build/hello_world
+- echo "Hello world application testing is done"
+- cd ..
+- cd solver_application
+- cmake -H. -B_build
+- cmake --build _build
+- cmake --build _build --target solver
+- echo "Solver application testing is done"
