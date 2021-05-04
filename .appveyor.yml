@@ -1,0 +1,16 @@
+image: Visual Studio 2019
+
+
+build_script:
+- cmd: cd hello_world_application
+- cmd: cmake -H. -B_build
+- cmd: cmake --build _build
+- cmd: cmake --build _build --target hello_world
+- cmd: _build\Debug\hello_world.exe
+- cmd: echo "Testing hello_world is done"
+- cmd: cd ..
+- cmd: cd solver_application
+- cmd: cmake -H. -B_build
+- cmd: cmake --build _build
+- cmd: cmake --build _build --target solver
+- cmd: echo "Testing solver is done"
