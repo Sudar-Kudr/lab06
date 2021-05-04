@@ -1,8 +1,15 @@
-os: Visual Studio 2015
+image: Visual Studio 2019
 
 build_script:
-  - cmd: cmake -Hformatter_lib/ -Bformatter_lib/_build
-  - cmd: cmake -Hformatter_ex_lib/ -Bformatter_ex_lib/_build
-  - cmd: cmake -Hhello_world_application/ -Bhello_world_application/_build
-  - cmd: cmake -Hsolver_lib/ -Bsolver_lib/_build
-  - cmd: cmake -Hsolver_application/ -Bsolver_application/_build
+- cmd: cd hello_world_application
+- cmd: cmake -H. -B_build
+- cmd: cmake --build _build
+- cmd: cmake --build _build --target hello_world
+- cmd: _build\Debug\hello_world.exe
+- cmd: echo "Testing hello_world is done"
+- cmd: cd ..
+- cmd: cd solver_application
+- cmd: cmake -H. -B_build
+- cmd: cmake --build _build
+- cmd: cmake --build _build --target solver
+- cmd: echo "Testing solver is done"
