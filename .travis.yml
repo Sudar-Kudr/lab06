@@ -1,5 +1,6 @@
 language: cpp
 
+
 script:
 - cd solver_application
 - cmake .
