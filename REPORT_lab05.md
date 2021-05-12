@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.com/Sudar-Kudr/lab05.svg?branch=main)](https://travis-ci.com/Sudar-Kudr/lab05)
-## Laboratory work IV
+## Laboratory work V
 
-Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
+Данная лабораторная работа посвещена изучению фреймворков для тестирования на примере **GTest**
 
 ```sh
-$ open https://travis-ci.org
+$ open https://github.com/google/googletest
 ```
 
 ## Tasks
