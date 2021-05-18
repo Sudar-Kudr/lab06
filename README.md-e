@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Sudar-Kudr/lab06.svg?branch=main)](https://travis-ci.com/Sudar-Kudr/lab06)
+[![Build Status](https://travis-ci.com/Sudar-Kudr/lab05.svg?branch=main)](https://travis-ci.com/Sudar-Kudr/lab05)
 ## Laboratory work IV
 
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
@@ -10,7 +10,7 @@ $ open https://travis-ci.org
 ## Tasks
 
 - [ok] 1. Авторизоваться на сервисе **Travis CI** с использованием **GitHub** аккаунта
-- [ok] 2. Создать публичный репозиторий с названием **lab06** на сервисе **GitHub**
+- [ok] 2. Создать публичный репозиторий с названием **lab05** на сервисе **GitHub**
 - [ok] 3. Ознакомиться со ссылками учебного материала
 - [ok] 4. Включить интеграцию сервиса **Travis CI** с созданным репозиторием
 - [ok] 5. Получить токен для **Travis CLI** с правами **repo** и **user**
